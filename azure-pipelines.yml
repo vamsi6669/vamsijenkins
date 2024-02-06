@@ -1,15 +1,10 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
 - main
 
 pool:
-  name: koni   # Set the pool name to 'koni'
+  name: nag   # Set the pool name to 'nag'
   demands:
-  - agent.name -equals agent1   # Add a demand to specify the agent name as 'agent1'
+  - agent.name -equals agent   # Add a demand to specify the agent name as 'agent'
 
 steps:
 - script: echo Hello, world!
